@@ -42,4 +42,4 @@ int mode(int a[], int n){
      printf("max is %i \n",large);}
      printf("mode is %i \n",a[i]);
          return a[i];}
-       }
+       
