@@ -16,3 +16,12 @@ int min(int a[], int n){
      printf("min is %i \n",small);}
        return small;
        }
+float average(int a[], int n){
+      int sum=0;
+      float avg;
+    for(int i=0;i<n;i++)
+      sum+=a[i];
+       avg=(float)sum/n;
+     printf("average is %f \n",avg);
+       return avg;
+       }
