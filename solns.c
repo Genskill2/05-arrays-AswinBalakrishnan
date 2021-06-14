@@ -26,4 +26,28 @@ float average(int a[], int n){
        return avg;
        }
 
-       
+   int max(int a[], int n);
+int mode(int a[], int n){
+      int c[n],count;
+    for(int i=0;i<n;i++){
+        count=0;
+    for(int j=0;j<n;j++){
+      if(a[i]==a[j])
+         count++;
+         }
+       c[i]=count;
+       printf("%ith element of array c is%i \n",i,c[i]);}
+       int i=max(c,n);
+       printf("%i \n",a[i]);
+        return a[i];
+       }
+       int max(int a[], int n){
+      int large=a[0],i,no;
+    for(i=0;i<n;i++){
+      if (a[i]>large)
+         no=i;
+        large=a[i];
+     printf("max is %i \n",large);}
+     printf("%i\n",no);
+         return no;
+       }    
