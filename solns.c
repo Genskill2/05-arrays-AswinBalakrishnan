@@ -45,4 +45,26 @@ float average(int a[], int n){
      printf("%i \n",a[i]);
         return a[i];
        }
-   }    
+   }   
+int factors(int x, int a[]){
+  int i,j,count,num=0;
+  for(i=2;i<=x;i++){
+  count=0;
+    if((x%i==0)){
+    for(j=1;j<=i;j++){
+       if((i%j==0)){
+         count++;
+          }
+       }
+    if(count<=2){
+        while(x%i==0){
+           a[num]=i;
+           x=x/i;
+           num++;
+          }
+         }
+         }
+            
+            }
+     return num;
+           }
